@@ -8,6 +8,7 @@
 body{
   background: #0f1624;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 .container{
   width: 1660px;
@@ -47,6 +48,7 @@ body{
   width: 32px;
   height: 32px;
 }
+.icons{display: flex;}
 .portfolio{
   margin-top: 145px;
 }
@@ -97,6 +99,18 @@ body{
   right: 0;
   height: 758px;
   width: 758px;
+  animation-name: rotateSquare;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes rotateSquare{
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg)
+  }
 }
 .project{
   margin-top: 145px;
@@ -167,7 +181,7 @@ body{
 .technologies{
   margin-top: 145px;
 }
-.technologies h2{
+.technologies-title{
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -178,6 +192,7 @@ body{
 .technologies-body{
   max-width: 1330px;
   margin: 0 auto;
+  margin-bottom: 121px;
 }
 .skill{
   font-style: normal;
@@ -190,4 +205,309 @@ body{
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
+}
+.text{
+  display: flex;
+  justify-content: space-between;
+}
+.full-line{
+  height: 32.3px;
+  width: 1320px;
+  background: #162950;
+  border-radius: 83px;
+}
+.progress-line{
+  background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+  border-radius: 83px;
+  width: 990px;
+  height: 32px;
+}
+.regular{
+  width: 660px;
+  height: 32px;
+}
+.beginner{
+  width: 330px;
+  height: 32px;
+}
+.technologies-item{
+  margin-bottom: 54px;
+}
+.technologies-img{
+  background-image: url("/img/background.jpg");
+  height:626px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 121px;
+}
+.skills-title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  margin-bottom: 82px;
+}
+.skills{
+  max-width: 1330px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.skills-item{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  margin-bottom: 32px;
+}
+.about-me{
+  margin-top: 145px;
+}
+.about-me-title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 96px;
+  margin-bottom: 87px;
+  margin-left: 60px;
+}
+.about-me-text{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  margin-top: 30px;
+}
+.year{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+}
+.about-me-dot{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color:#fff;
+  left: 50%;
+  top: 49px;
+}
+.about-me-line{
+  height: 12px;
+  position: absolute;
+  width: 100%;
+  background-color:#fff;
+  background-color: #8e61d5;
+  top: 60px;
+  width: 0;
+}
+.about-me:hover .year-2020{
+  animation-name: changeColor;
+  animation-direction: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .year-2021{
+  animation-name: changeColor;
+  animation-direction: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .year-2022{
+  animation-name: changeColor;
+  animation-direction: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .year-2023{
+  animation-name: changeColor;
+  animation-direction: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes changeColor{
+  from{
+    color: #fff;
+  }
+  to{
+    color: #8e61d5;
+  }
+}
+.about-me:hover .dot-2020{
+  animation-name: changeDot;
+  animation-direction: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .dot-2021{
+  animation-name: changeDot;
+  animation-direction: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .dot-2022{
+  animation-name: changeDot;
+  animation-direction: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .dot-2023{
+  animation-name: changeDot;
+  animation-direction: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes changeDot{
+  from{
+    background-color: #fff;
+  }
+  to{
+    background-color: #8e61d5;
+  }
+}
+.about-me:hover .line-2020{
+  animation-name: changeLine;
+  animation-direction: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .line-2021{
+  animation-name: changeLine;
+  animation-direction: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .line-2022{
+  animation-name: changeLine;
+  animation-direction: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeLine{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%
+  }
+}
+.about-me-body{
+  display: flex;
+  
+}
+.about-me-item{
+  flex: 25%;
+  position: relative;
+}
+/*.about-me-right{
+  height: 12px;
+  position: absolute;
+  width: 50%;
+  background-color: #fff;
+  top: 60px;
+}*/
+/*.about-me-left{
+  height: 12px;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  background-color: #fff;
+  top: 60px;
+}*/
+.about-me:hover .year-2020{
+  animation-name: changeColor;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .year-2021{
+  animation-name: changeColor;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .year-2022{
+  animation-name: changeColor;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .year-2023{
+  animation-name: changeColor;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .dot-2020{
+  animation-name: changeDot;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .dot-2021{
+  animation-name: changeDot;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .dot-2022{
+  animation-name: changeDot;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .dot-2023{
+  animation-name: changeDot;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .line-2020{
+  animation-name: changeLine;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .line-2021{
+  animation-name: changeLine;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.about-me:hover .line-2022{
+  animation-name: changeLine;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.footer{
+  margin-top: 145px;
+  margin-bottom: 45px;
+}
+
+.footer-body{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.footer-element a{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 63px;
+}
+.footer-element p{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 63px;
+}
+.footer-icom img{
+  width: 72px;
+  height: 72px;
+  margin: 0 32px;
+}
+.footer-icom{
+  display: flex;
+  align-items: center;
+  
 }
